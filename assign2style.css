@@ -1,0 +1,50 @@
+.table
+{
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+
+.stu-info
+{
+  color: #fc3004;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+border-collapse: collapse;
+width: 50%;
+background-color: white;
+}
+ .nr
+ {
+color: #041efc;
+font-weight: bold;
+text-align: center;
+ }
+ .r
+ {
+   text-decoration: underline;
+   font-style: italic;
+ }
+.ce
+{
+color: #041efc;
+text-align: center;
+}
+.e
+{
+  text-decoration: underline;
+}
+.nrce
+{
+  color: #d604fc;
+  text-align: center;
+}
+td, th {
+  border: 1px dotted #dddddd;
+  text-align: center;
+  padding: auto;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
