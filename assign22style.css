@@ -1,0 +1,17 @@
+h1,p
+{
+  text-align: center;
+}
+body
+{
+ background-image: url(https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.bad043c2.jpeg);
+ color: #fff;
+}
+table
+{
+ margin: auto;
+}
+.button
+{
+  background-color: #008CBA;
+}
