@@ -4,7 +4,7 @@
 </head>
 <body>
   <div class="" align="center">
-    <form action="form.html" method="post">
+    <form action="first.php" method="POST">
     <table>
     <thead>
     <tr>
@@ -28,7 +28,7 @@
     </tr>
     </thead>
     </table>
-    <input type="submit">
+    <input type="submit" name="submit">
     </form>
   </div>
 
@@ -40,14 +40,19 @@
  //$var2 = 20;
  if(isset($_POST['submit']))
  {
-    $Username = $_POST[name];
-    $Email = $_POST[Email];
-    $Contact = $_POST[Contact];
-    $City = $_POST[City];
-    $Course = $_POST[Course];
-    $Interest = $_POST[init]
+    $name = $_POST['name'];
+    $Email = $_POST['Email'];
+    $Contact = $_POST['Contact'];
+    $City = $_POST['City'];
+    $Course = $_POST['Course'];
+    $Init = $_POST['Init'];
     
-    echo "Username = $Username  Email =$Email contact no. = $Contact city = $City Course = $course interest = $_Interest";
+    echo " Username = $name ";
+    echo  "Email =$Email";
+    echo  "contact no. = $Contact";
+    echo  "city = $City";
+    echo  "Course = $Course";
+    echo  "interest = $Init";
  }
  else{
      echo "no input";
