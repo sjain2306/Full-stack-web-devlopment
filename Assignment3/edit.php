@@ -22,7 +22,7 @@ if(isset($_POST['update'])){
     $sql = "UPDATE `users` SET username='$username', email='$email', gender='$gender', city='$city' WHERE id='$id'";
     if(mysqli_query($conn, $sql)){
         echo "Data updated successfully...";
-        header("Location:details.php");
+        header("Location:showdetails.php");
     }
     else{
         echo "Updation failed..";
@@ -46,7 +46,7 @@ if(isset($_POST['update'])){
         <option value="Mussoorie" <?php if($city=="Mussoorie"){echo "selected";}?>>Mussoorie</option>
         <option value="Patna" <?php if($city=="Patna"){echo "selected";}?>>Patna</option>
     </select><br>
-    <input type="submit" name="update" value="Update">
+    <input type="submit" name="update" value="update">
 </form>
 </body>
 </html>
