@@ -3,7 +3,7 @@
         <title>Sum of Two Numbers</title>
     </head>
     <body>
-        <form method="POST" action="sum.php">
+        <form method="POST" action="additionofnumber.php">
             Variable 1 <input type="number" name="variable1">
             Variable 2 <input type="number" name="variable2">
             <input type="submit" name="submit" value="submit">
