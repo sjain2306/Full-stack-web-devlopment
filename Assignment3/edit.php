@@ -32,6 +32,15 @@ if(isset($_POST['update'])){
 <html>
     <head>
         <title>HTML Forms</title>
+        <style>
+         body
+        {
+            background-image : url("https://cdn.pixabay.com/photo/2017/04/05/04/44/background-2203989_960_720.jpg");
+            text-align : center;
+            font-size : 1.5rem;
+            margin-top : 10%;
+        }  
+        </style>
     </head>
 <body>
 <form method="GET" action="edit.php?id=<?php echo "$id"?>">
