@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>circle colur</title>
+  <style>
+    .circle {
+      background-color: blue;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <script language="javascript" type="text/javascript">
+    function fun() {
+      var a = "#";
+      a = a + Math.floor(Math.random() * 1000000);
+      document.getElementsByClassName('circle')[0].style.backgroundColor = a;
+    }
+  </script>
+  <div class="circle">
+  </div>
+  <button id="reset" onclick="fun()">Reset</button>
+</body>
+
+</html>
