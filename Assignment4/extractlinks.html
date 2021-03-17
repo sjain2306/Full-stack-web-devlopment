@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>extract links</title>
+</head>
+
+<body>
+
+  <a href="contact.html">contact</a>
+  <a href="hobbies.html">hobbies</a>
+  <a href="skills.html">skills</a>
+  <a href="cities.html">cities travel</a>
+
+  <button onclick="fun()">Extract</button>
+
+  <script language="javascript" type="text/javascript">
+    function fun() {
+      var array = [];
+      var links = document.getElementsByTagName("a");
+
+      for (var i = 0; i < links.length; i++) {
+        array.push(links[i].innerHTML);
+        array.push(links[i].href);
+      };
+
+      var table = '<table><thead><th>Name</th><th>Links</th></thead><tbody>';
+      for (var i = 0; i < array.length; i = i + 2) {
+        table += '<tr><td>' + array[i] + '</td><td>' + array[i + 1] + '</td></tr>';
+      };
+      var w =window.open("");
+      w.document.write(table);
+    }
+  </script>
+
+</body>
+
+</html>
