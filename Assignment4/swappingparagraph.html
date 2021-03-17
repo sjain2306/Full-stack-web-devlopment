@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>swap two paragraph</title>
+</head>
+
+<body>
+
+  <p id="fp">Hello,my name is Shubham Jain.I live in vikasnagar,Dehradun.<br />I am a Computer Science and Engineering student. </p>
+  <p id="sp">I studeis in Graphic Era University,Dehradun.<<br>In present,I am in 6th semester. </p>
+
+  <button onclick="fun()">swap</button>
+  <script language="javascript" type="text/javascript">
+    function fun() {
+      var x = document.getElementById("fp").innerHTML
+      var y = document.getElementById("sp").innerHTML
+      document.getElementById("fp").innerHTML = y
+      document.getElementById("sp").innerHTML = x
+    }
+  </script>
+</body>
+
+</html>
